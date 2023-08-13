@@ -1,0 +1,269 @@
+/* *****Layout********* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1C1C1C;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 550px;
+    height: 600px;
+    background: #ECFDF5;
+    margin: 64px auto;
+}
+
+#password-strength-gif {
+    width: 100%;
+    height:300px;
+    background-color: #1C1C1C;
+    margin-top: 25px;
+}
+
+.hide {
+  display: none;
+}
+
+#password-length {
+    height: .25em;
+    background-color: #2B283A;
+    border-radius: 10px;
+    outline: #10B981 1px groove;
+    margin-left: 300px;
+    width: 170px;
+}
+
+
+#password-length:hover,
+#password-length:focus {
+   background-color: snow;   
+}
+
+#password-length,
+#password-length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+
+#password-length::-webkit-slider-thumb{
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
+
+#password-length::-webkit-slider-thumb:hover {
+   background-color: #1C1C1C;    
+}
+
+output {
+    display: inline-block;
+    margin-top: -12px;
+    padding: 4px 8px;
+}
+
+#password-copied,
+.password-field,
+output:hover{
+    background: #273549;
+}
+
+.line {
+    width: 446px;
+    height: 1px;
+    margin: 0 auto;
+    background: #D5D4D8;
+    margin-top: 35px;
+}
+
+.password-field-flex-container {
+    margin-top: 35px;
+}
+
+.password-field-flex-container,
+.click-to-copy-message-container,
+#password-strength-div,
+#password-strength {
+    display: flex;
+}
+
+.password-field {
+    width: 211px;
+    margin-right: 24px;
+    padding: 4px 16px;
+    color: #55F991;
+    line-height: 32px; 
+}
+
+.left-margin {
+    margin-left: 52px;
+}
+
+.click-to-copy-msg1 {
+    margin: 5px 65px 0px 69px;
+}
+
+.click-to-copy-msg2 {
+    margin-top: 5px;
+}
+
+#no-numbers-checkbox {
+    margin-top: 20px;
+}
+
+#no-symbols-checkbox {
+    margin-left: 44px;
+}
+
+#password-strength-div {
+    justify-content: space-between;
+}
+
+#password-strength {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#password-strength span {
+    margin-top: 8px;
+}
+
+#password-copied,
+.password-field {
+    height: 39px;  
+}
+
+#password-copied {
+    margin: 23px 52px 0px 15px;
+    font-style: italic;
+    width: 211px;
+    padding: 5px 16px;
+    color: #55F991;
+}
+
+/* Utility Classes */
+
+.border-radius {
+    border-radius: 6px;
+}
+
+.align-top{
+    vertical-align: top;
+}
+
+
+/************** Typography *************/
+
+.headline {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    padding-top: 115px;
+    margin-bottom: 10px;
+}
+
+.headline,
+#password-strength {
+    color: #2B283A;
+    font-family: Karla;
+}
+
+.green-headline {
+    color: #10B981;
+}
+
+.headline-description {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 51px;
+}
+
+.headline-description,
+#set-length {
+    color: #6B7280;
+}
+
+.btn {
+    padding: 9px 17px 9px 15px;
+    border: none;
+}
+
+.btn,
+#set-length {
+    line-height: 24px;
+}
+
+.btn,
+output {
+     color: #FFFFFF;
+}
+
+.btn,
+output,
+#password-length::-webkit-slider-thumb {
+background-color: #10b981;    
+}
+
+.btn,
+#password-strength-description{
+    font-family: inter;
+}
+
+.btn,
+#set-length,
+output,
+.password-field {
+    font-weight: 500;
+}
+
+.password-field,
+#password-copied {
+    text-align: center;
+}
+
+.click-to-copy-message-container {
+    color: #273549;                                                                               
+}
+
+#password-strength-description {
+    text-decoration-line: underline;
+}
+
+.click-to-copy-message-container,
+#password-strength-description ,
+#password-copied {
+    font-size: 12px;
+}
+
+.strong {
+    color: darkgreen;
+}
+
+.medium {
+    color: #0000D6;
+}
+
+.weak {
+    color: #800000;
+}
+
+.strong-gif {
+    background-image: url('https://media.giphy.com/media/D7z8JfNANqahW/giphy.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.medium-gif {
+    background-image: url('https://media.giphy.com/media/xRKqJx9PGL6DIULKx3/giphy.gif');
+    background-size: cover;
+}
+
+.weak-gif {
+    background-image: url('https://media.giphy.com/media/QoZunxgU0Z1i8/giphy.gif');
+    background-size: cover;
+    background-position: center;
+}

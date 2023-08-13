@@ -1,0 +1,67 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Karla Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap"  rel="stylesheet">
+        <!-- Inter Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <!-- Stylesheet link -->
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <div class="container" id="container">
+            <h1 class="headline left-margin">
+                Generate a <br> 
+                <span class="green-headline">random password</span>
+            </h1>
+            <p class="headline-description left-margin">Never use an insecure password again</p>
+            <button class="btn left-margin border-radius" id="password-btn" onclick=getPassword()>Generate passwords</button>
+            <label for="ratings" class="left-margin align-top" id="set-length">Set your password length:</label>
+            <input type="range"
+            value="8"
+            name="password-length"
+            id="password-length"
+            class="align-top"
+            min=1
+            max=16
+            oninput="this.nextElementSibling.value=this.value">
+            <output class="border-radius align-top">8</output>
+            <hr class="line">
+            
+            <div class="password-field-flex-container">
+               <div class="password-field left-margin border-radius" id="password-field" 
+                onclick="copyDivToClipboard()"></div>
+                
+                <div class="password-field border-radius" id="password-field2"
+                onclick="copyDivTwoToClipboard()"></div>
+            </div>
+            
+              <div class="click-to-copy-message-container">
+                <p class="click-to-copy-msg1">Click your password to copy it</p>
+                <p class="click-to-copy-msg2">Click your password to copy it</p>
+              </div>
+             
+             <label>
+                <input type="checkbox" name="no-numbers" id="no-numbers-checkbox" class="left-margin"> Don't include numbers
+            </label>
+            <label>
+                <input type="checkbox" name="no-symbols" id="no-symbols-checkbox"> Don't include symbols
+            </label>
+            
+            <div id="password-strength-div">
+                <p id="password-strength" class="left-margin">Your password strength: ?
+                <span id="password-strength-description">(generate password to check strength)</span>
+                </p>
+                <p id="password-copied" class="border-radius">"Your Password Copied" confirmation will appear here!</p>
+           
+           </div>
+           <div id="password-strength-gif" class="hide">
+            </div> 
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
