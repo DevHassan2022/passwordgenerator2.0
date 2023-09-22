@@ -83,7 +83,10 @@ function gifStyle() {
 }                
 
 function passwordStrengthMessage() {
-    
+                document.getElementById('password-strength-gif').classList.remove('strong-gif');
+                document.getElementById('password-strength-gif').classList.remove('medium-gif');
+                document.getElementById('password-strength-gif').classList.remove('weak-gif');
+      
                 if (passwordLength.value >= 8 && !noNumbers.checked && !noSymbols.checked) {
                 passwordStrength.innerHTML = `Your password strength: 
                 <span class="strong">Strong💪</span>`;
